@@ -1,0 +1,334 @@
+@import "./reset";
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: #f9f9f9;
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+
+  /* Header */
+  header {
+    background: #eeeff1;
+
+    .wrapper-header {
+      max-width: 1122px;
+      margin: 0 auto;
+      padding: 79px 20px;
+    }
+
+    nav ul li {
+      color: #000;
+      font-family: Roboto;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+    nav ul li:nth-child(1) {
+      display: none;
+    }
+
+    .homepage {
+      font-weight: 500;
+      color: #34547a;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      float: left;
+      margin-right: 42px;
+    }
+
+    h1 {
+      padding-top: 151px;
+      color: #000;
+      font-family: Roboto;
+      font-size: 4.8rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 164.063%;
+    }
+
+    .wrapper-header p {
+      color: #727272;
+      padding-top: 60px;
+      max-width: 540px;
+      /* p */
+      font-family: Roboto;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 164.063%; /* 26.25px */
+    }
+
+    button {
+      margin: 65px 0;
+      min-width: 225px;
+      min-height: 65px;
+      background: #34547a;
+    }
+    .text-button {
+      min-width: 143px;
+      min-height: 26px;
+      color: #fff;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 164.063%; /* 26.25px */
+      letter-spacing: 1.6px;
+    }
+  }
+
+  /* About me */
+  .about-me {
+    background: #fff;
+
+    .wrapper-about {
+      max-width: 540px;
+      margin: 0px auto;
+      padding: 100px 0;
+    }
+
+    h2 {
+      color: #000;
+      text-align: center;
+
+      /* h2 */
+      font-family: Roboto;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .text-about-me {
+      padding-top: 50px;
+      margin: 0 20px;
+      color: #727272;
+
+      text-align: center;
+      /* p */
+      font-family: Roboto;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 164.063%; /* 26.25px */
+    }
+  }
+
+  /* Numbers section */
+  .numbers {
+    background: #34547a;
+    display: flex;
+    justify-content: center;
+
+    .all-projects {
+      max-width: 1110px;
+      padding: 100px 20px;
+
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      img {
+        vertical-align: sub;
+      }
+      .group-project {
+        display: inline-block;
+        padding-left: 20px;
+        padding-right: 45px;
+      }
+
+      .group-project h3 {
+        color: #fff;
+
+        /* h3 */
+        font-family: Roboto;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      .group-project p {
+        color: #fff;
+
+        /* p */
+        font-family: Roboto;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 164.063%; /* 26.25px */
+      }
+    }
+  }
+
+  /* Video block */
+
+  main {
+    margin: 0 auto;
+    background: #eeeff1;
+
+    .wrapper-main {
+      max-width: 1110px;
+      padding: 100px 0;
+      margin: 0 auto;
+
+      & h2 {
+        color: #000;
+        text-align: center;
+
+        /* h2 */
+        font-family: Roboto;
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      & p {
+        padding-top: 50px;
+        max-width: 540px;
+        margin: 0 auto;
+        color: #727272;
+        text-align: center;
+        margin: 0 20px;
+
+        /* p */
+        font-family: Roboto;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 164.063%; /* 26.25px */
+      }
+
+      video {
+        max-width: 1110px;
+        margin-top: 50px;
+      }
+    }
+  }
+
+  /* footer */
+
+  footer {
+    background: #34547a;
+
+    .wrapper-footer {
+      max-width: 1110px;
+      margin: 0 auto;
+      padding: 50px 20px;
+    }
+
+    .wrapper-footer h3 {
+      color: #fff;
+
+      /* h3 */
+      font-family: Roboto;
+      font-size: 2.1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .wrapper-footer p {
+      margin-top: 20px;
+      color: #fff;
+      font-family: Roboto;
+      font-size: 1.3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 164.063%; /* 21.328px */
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  body {
+    .numbers {
+      .all-projects {
+        max-width: 600px;
+        .projects-block {
+          margin: 10px 0;
+        }
+      }
+    }
+    main {
+      .wrapper-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        video {
+          max-width: 57.813vw;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    header {
+      h1 {
+        padding-top: 90px;
+      }
+      .wrapper-header {
+        padding: 30px 20px;
+      }
+      nav ul li:nth-child(2),
+      nav ul li:nth-child(3),
+      nav ul li:nth-child(4),
+      nav ul li:nth-child(5),
+      nav ul li:nth-child(6) {
+        display: none;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li:nth-child(1) {
+        display: block;
+      }
+    }
+
+    .numbers {
+      .all-projects {
+        max-width: 600px;
+        .projects-block {
+          margin: 10px 0;
+        }
+      }
+    }
+    main {
+      .wrapper-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        video {
+          max-width: 70.813vw;
+          margin-top: 50px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 570px) {
+  body {
+    .numbers {
+      .all-projects {
+        justify-content: center;
+      }
+    }
+  }
+}
